@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Customer_Registration</title>
+<style>
+div{
+border:2px inset grey;
+padding:4px;
+width:250px;
+margin:auto;
+margin-top:30px;
+background-color:grey;
+}
+body{
+background-color:lightblue;
+}
+
+input{
+border-radius:3px;
+width:90%;
+margin-right:10px;
+}
+label{
+text-align:center;
+}
+form{
+margin-top:20px;
+height:250px;
+}
+
+</style>
+</head>
+<body>
+<div>
+	<form action="MainServlet?method=register">
+		
+		<label>Name:</label>
+		<input type="text" placeholder="Enter Name" name="c_name" required/><br>
+		<label>City:</label>
+		<input type="text" placeholder="Enter City" name="c_city" required/><br>
+		<label>Email:</label>
+		<input type="email" placeholder="Enter Email" name="c_email" required/><br><br>
+		<input type="submit" value="Submit" required/><br>
+	</form>
+</div>	
+</body>
+</html>
